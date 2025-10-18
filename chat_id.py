@@ -7,7 +7,7 @@ import json
 
 
 # GitHub Secrets থেকে টেলিগ্রাম বট টোকেন নিন
-BOT_TOKEN = "8261672317:AAHC1Ei2EJYXUUxwVYY-RdLqya7G59AK9kk"
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 if not BOT_TOKEN:
     print("Warning: TELEGRAM_BOT_TOKEN environment variable not found. For local testing, ensure it's set.")
 
