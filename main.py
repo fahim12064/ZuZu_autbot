@@ -4,13 +4,12 @@ import json
 import csv
 import requests
 import time
-# 'sys' ইম্পোর্ট সরানো হয়েছে কারণ এটি ব্যবহৃত হয়নি
 from PIL import Image
 from io import BytesIO
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 
 # --- Configuration ---
-USER_IDS_FILE = "user_ids.json"
+USER_IDS_FILE = "chat_ids.json"
 CSV_FILE_NAME = "scraped_devices.csv"
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 if not TELEGRAM_BOT_TOKEN:
